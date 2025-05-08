@@ -56,14 +56,20 @@ TypeScript is a powerful, open-source programming language developed by Microsof
 <br>
 <p>
 <b>There are four points explaining how TypeScript helps improve code quality</b>
-Early Error Detection: TypeScript catches type-related errors during development, reducing runtime bugs. <br>
 
-Clear Code Structure: With interfaces, types, and classes, TypeScript enforces organized and consistent code. <br>
+1.Early Error Detection: TypeScript catches type-related errors during development, reducing runtime bugs. <br>
 
-Improved Readability: Type annotations make it easier for developers to understand the purpose and behavior of code. <br>
+2.Clear Code Structure: With interfaces, types, and classes, TypeScript enforces organized and consistent code. <br>
 
-Better Tooling Support: TypeScript enables intelligent code completion, navigation, and refactoring in modern IDEs.<br>
+3.Improved Readability: Type annotations make it easier for developers to understand the purpose and behavior of code. <br>
 
+4.Better Tooling Support: TypeScript enables intelligent code completion, navigation, and refactoring in modern IDEs.<br>
+</p> <br>
+
+<p>
+In the end, TypeScript makes coding safer, cleaner, and easier to manage. By adding types to JavaScript, it helps developers catch errors early, write more structured code, and build better, more maintainable projects.
 </p>
+
+<hr>
 
 
