@@ -127,3 +127,42 @@ function processValue(value: string | number): number {
 
 console.log(processValue("Hello")); // Output: 5
 console.log(processValue(10));      // Output: 20
+
+
+
+
+
+
+
+
+//--------------- Problem 6
+// Description: Define an interface Product and create a function to 
+// find the product with the highest price in an array. If the array is empty, return null.
+interface Product {
+    name: string;
+    price: number;
+}
+function getMostExpensiveProduct(products: Product[]): Product | null {
+    if (products.length === 0) {
+        return null;
+    }
+
+    let mostExpensive = products[0];
+
+    for (let i = 1; i < products.length; i++) {
+        if (products[i].price > mostExpensive.price) {
+            mostExpensive = products[i];
+        }
+    }
+
+    return mostExpensive;
+}
+const products = [
+    { name: "Pen", price: 10 },
+    { name: "Notebook", price: 25 },
+    { name: "Bag", price: 50 }
+];
+console.log(getMostExpensiveProduct(products))    // Output: { name: "Bag", price: 50 }
+
+
+
