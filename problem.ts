@@ -113,8 +113,8 @@ console.log(myCar.getModel());  // Output: "Model: Corolla"
 
 
 // ----------------Problem 5:
-// Description: Write a function that takes a string | number and returns:
-
+// Description: 
+// Write a function that takes a string | number and returns:
 // The length if it's a string
 // The number multiplied by 2 if it's a number
 function processValue(value: string | number): number {
@@ -136,7 +136,8 @@ console.log(processValue(10));      // Output: 20
 
 
 //--------------- Problem 6
-// Description: Define an interface Product and create a function to 
+// Description:
+// Define an interface Product and create a function to 
 // find the product with the highest price in an array. If the array is empty, return null.
 interface Product {
     name: string;
@@ -166,3 +167,28 @@ console.log(getMostExpensiveProduct(products))    // Output: { name: "Bag", pric
 
 
 
+
+
+// Problem 7:
+// Description:
+// Define an enum Day for the days of the week.
+// Create a function that returns "Weekday" or "Weekend" based on the input day.
+enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
+
+function getDayType(day: Day): string {
+    if (day === Day.Saturday || day === Day.Sunday) {
+        return "Weekend";
+    } else {
+        return "Weekday";
+    }
+}
+console.log(getDayType(Day.Monday))  // Output: "Weekday"
+console.log(getDayType(Day.Sunday)) // Output: "Weekend"
